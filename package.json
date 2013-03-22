@@ -1,0 +1,38 @@
+{
+  "name": "contribflow",
+  "description": "Contribflow is a suite of high-level repository operations for making open source contributions easier.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/zencoder/contribflow",
+  "author": {
+    "name": "Steve Heffernan",
+    "email": "steve@zencoder.com",
+    "url": "heff.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zencoder/contribflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zencoder/contribflow/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://github.com/zencoder/contribflow/blob/master/LICENSE-Apache-2.0"
+    }
+  ],
+  "main": "lib/contribflow",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.1"
+  },
+  "keywords": []
+}
