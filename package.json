@@ -37,6 +37,7 @@
   "keywords": [],
   "dependencies": {
     "prompt": "~0.1.12",
-    "github": "~0.1.8"
+    "github": "~0.1.8",
+    "findup-sync": "~0.1.2"
   }
 }

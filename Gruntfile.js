@@ -47,4 +47,18 @@ module.exports = function(grunt) {
   // Default task.
   grunt.registerTask('default', ['jshint', 'nodeunit']);
 
+  grunt.registerTask('asdf', function(){
+    // var change = {};
+    // change.asdf = function(){
+    //   console.log(this.fdsa);
+    // };
+    // change.fdsa = 1;
+
+    // var feature = Object.create(change);
+    // feature.fdsa = 2;
+
+    // change.asdf();
+    // feature.asdf();
+  });
+
 };
