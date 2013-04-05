@@ -46,4 +46,15 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'nodeunit']);
+
+  // grunt.registerTask('asdf', function(){
+  //   var done = this.async();
+
+  //   var shell = require('./lib/shell');
+  //   shell.run('git remote -v', {}, function(err, stdout){
+  //     console.log(stdout.match(/origin\s+git@github\.com:([^\/]+)/)[1]);
+  //     done();
+  //   });
+  // });
+
 };
