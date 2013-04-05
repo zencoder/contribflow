@@ -47,14 +47,33 @@ module.exports = function(grunt) {
   // Default task.
   grunt.registerTask('default', ['jshint', 'nodeunit']);
 
-  // grunt.registerTask('asdf', function(){
-  //   var done = this.async();
+  grunt.registerTask('asdf', function(){
+    // https://github.com/libgit2/node-gitteh/issues/31
+    // var gitteh = require("gitteh");
+    // var path = require("path");
 
-  //   var shell = require('./lib/shell');
-  //   shell.run('git remote -v', {}, function(err, stdout){
-  //     console.log(stdout.match(/origin\s+git@github\.com:([^\/]+)/)[1]);
-  //     done();
-  //   });
-  // });
+    // gitteh.openRepository(path.join(__dirname, ".."), function(err, repo) {
+    //   exports.repo = repo;
+
+    //   repo.remote("test", function(err, remote) {
+    //     exports.remote = remote;
+
+    //     remote.connect("fetch", function(err) {
+    //       if(err) return console.error(err);
+    //       console.log(remote);
+    //       console.log(remote.connected);
+    //       console.log(remote.refs);
+    //     });
+    //   });
+    // });
+
+    // var done = this.async();
+
+    // var shell = require('./lib/shell');
+    // shell.run('git remote -v', {}, function(err, stdout){
+    //   console.log(stdout.match(/origin\s+git@github\.com:([^\/]+)/)[1]);
+    //   done();
+    // });
+  });
 
 };
