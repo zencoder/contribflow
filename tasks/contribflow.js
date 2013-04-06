@@ -6,17 +6,17 @@
     var feature = contribflow.feature;
     var hotfix = contribflow.hotfix;
 
-    function taskCallback(err){
-      if (err) {
-        grunt.log.error(err);
-        return done(false);
-      }
-      done(true);
-    }
-
     // FEATURE
     grunt.registerTask('feature', 'feature management tasks', function(action, option, option2){
       var done = this.async();
+
+      function taskCallback(err){
+        if (err) {
+          grunt.log.error(err);
+          return done(false);
+        }
+        done(true);
+      }
 
       // Start a new feature
       if (action === 'start') {
@@ -45,6 +45,14 @@
     // HOTFIX
     grunt.registerTask('hotfix', 'hotfix management tasks', function(action, option, option2){
       var done = this.async();
+
+      function taskCallback(err){
+        if (err) {
+          grunt.log.error(err);
+          return done(false);
+        }
+        done(true);
+      }
 
       // Start a new hotfix
       if (action === 'start') {
