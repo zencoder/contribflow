@@ -70,5 +70,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 _(Nothing yet)_
 
 ## License
-Copyright (c) 2013 Steve Heffernan  
+Copyright (c) 2013 Steve Heffernan
 Licensed under the Apache-2.0 license.
