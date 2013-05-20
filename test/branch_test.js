@@ -27,7 +27,7 @@ exports['awesome'] = {
     // setup here
     done();
   },
-  'corrent values for branch.parseName': function(test) {
+  'correct values for branch.parseName': function(test) {
     var info;
     
     info = branch.parseName('owner/feature/name');
@@ -57,6 +57,20 @@ exports['awesome'] = {
     test.equal(info.changeType, undefined, 'should have corrent change type');
     test.equal(info.owner, undefined, 'should have corrent owner name');
     test.equal(info.ownerBranchName, undefined, 'should have corrent owner branch name');
+
+    test.done();
+  },
+  'create and delete a branch': function(test) {
+    var curr = branch.current().name;
+    var temp = 'TEMP-TEST';
+
+    branch.create(temp);
+    test.equal(branch.current().name, temp, 'current branch should be new branch');
+
+    branch.checkout(curr);
+
+    branch.deleteLocal(temp);
+    test.notEqual(branch.current().name, temp, 'current branch should NOT be new branch');
 
     test.done();
   },
