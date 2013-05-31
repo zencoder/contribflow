@@ -1,13 +1,21 @@
 # contribflow [![Build Status](https://secure.travis-ci.org/zencoder/contribflow.png?branch=master)](http://travis-ci.org/zencoder/contribflow)
 
-Contribflow is a suite of high-level repository operations for making open source contributions easier.
+Contribflow is a set of command-line operations that aims to make the contribution process easier for both contributors and repository managers.
+
+For contributors:
+* Easily create/delete git branches for new changes (a best-practice when contributing)
+* Submit Github pull requests from the command-line
+* Learn the underlying git commands as you go
+
+For project owners:
+* Allow git novices to more easily contribute while also learning git
+* Prevent pull requests to the wrong branch
+* Accept pull requests, squash commits, bump version, and update the changelog, all with a single command
 
 ## Getting Started
-Install the module with: `npm install contribflow`
-
-```javascript
-var contribflow = require('contribflow');
-contribflow.awesome(); // "awesome"
+Install the module globally with:
+```
+[sudo] npm install -g contribflow
 ```
 
 It's based on the [Gitflow](http://nvie.com/posts/a-successful-git-branching-model/) branching model, however some of the branches are named differently.

@@ -29,8 +29,8 @@
       // Submit a feature via pull request
       } else if (action === 'submit') {
         feature.submit(option, {
-          upstreamOwner: grunt.option('owner'), // CLI flag
-          baseBranchName: grunt.option('branch') // CLI flag
+          owner: grunt.option('owner'), // CLI flag
+          baseBranch: grunt.option('base') // CLI flag
         }, taskCallback);
 
       // Download the branch from a pull requst and run tests
@@ -65,8 +65,8 @@
       // Submit a hotfix via pull request
       } else if (action === 'submit') {
         hotfix.submit(option, {
-          upstreamOwner: grunt.option('owner'), // CLI flag
-          baseBranchName: grunt.option('branch') // CLI flag
+          owner: grunt.option('owner'), // CLI flag
+          baseBranch: grunt.option('base') // CLI flag
         }, taskCallback);
 
       // Download the branch from a pull requst and run tests

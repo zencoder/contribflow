@@ -1,6 +1,6 @@
 {
   "developmentBranch": "master",
   "releaseBranch": "stable",
-  "remote": "origin",
-  "upstream": "zencoder"
+  "owner": "zencoder",
+  "project": "contribflow"
 }
