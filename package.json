@@ -35,12 +35,11 @@
     "grunt-contrib-jshint": "~0.1.1",
     "grunt-contrib-nodeunit": "~0.1.2",
     "grunt-contrib-watch": "~0.2.0",
-    "grunt": "~0.4.1",
-    "prompt": "~0.2.9"
+    "grunt": "~0.4.1"
   },
   "keywords": [],
   "dependencies": {
-    "prompt": "~0.1.12",
+    "prompt": "0.2.9",
     "github": "~0.1.8",
     "findup-sync": "~0.1.2",
     "moment": "~2.0.0",
