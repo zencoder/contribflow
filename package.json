@@ -1,7 +1,7 @@
 {
   "name": "contribflow",
   "description": "Contribflow is a suite of high-level repository operations for making open source contributions easier. It's based on the git-flow branching model with modifications for the open souce workflow.",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "homepage": "https://github.com/zencoder/contribflow",
   "author": {
     "name": "Steve Heffernan",
