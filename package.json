@@ -23,7 +23,7 @@
   ],
   "main": "lib/contribflow",
   "bin": {
-    "contrib": "./bin/contrib.js"
+    "contrib": "./bin/contrib"
   },
   "engines": {
     "node": ">= 0.8.0"
