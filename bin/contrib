@@ -6,6 +6,6 @@ var value1 = process.argv[4];
 var value2 = process.argv[4];
 
 // The 'delete' keywords causes issues in js
-if (type === 'delete') type = 'del';
+if (command === 'delete') command = 'del';
 
 contribflow[type][command](value1, value2);
