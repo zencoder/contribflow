@@ -8,4 +8,15 @@ var value2 = process.argv[4];
 // The 'delete' keywords causes issues in js
 if (command === 'delete') command = 'del';
 
-contribflow[type][command](value1, value2);
+if (type === 'feature' || type === 'hotfix') {
+  if (command === 'start' || command === 'submit' || command === 'delete') {
+    contribflow[type][command](value1, value2);
+  } else {
+    console.log('usage: contrib', type, '[start | submit | delete]');
+    process.exit(0)
+  }
+} else {
+  console.log('usage: contrib [feature | hotfix] [start | submit | delete]');
+  process.exit(0)
+}
+
