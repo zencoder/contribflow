@@ -1,4 +1,4 @@
-# contribflow [![Build Status](https://secure.travis-ci.org/zencoder/contribflow.png?branch=master)](http://travis-ci.org/zencoder/contribflow)
+#  contribflow [![Build Status](https://secure.travis-ci.org/zencoder/contribflow.png?branch=master)](http://travis-ci.org/zencoder/contribflow)
 
 Contribflow is a set of command-line operations that aims to make the contribution process easier for both contributors and repository managers.
 
